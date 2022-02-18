@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1.5;
+  line-height: 1.5;
+}
+
+.h-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 70px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  width: 220px;
+}
+.logo {
+  display: flex;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 160px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 170px;
+  padding: 0px 0px;
+  height: 100%;
+}
+li:first-child {
+  padding-right: 20px;
+}
+
+li:first-child a:hover{
+  color: #bd942e;
+}
+
+.nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #444;
+  opacity: 0.9;
+}
+
+.socials img {
+  height: 14px;
+  width: 14px;
+}
+
+ul li {
+  height: 100%;
+}
+
+@keyframes fb{
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(-30px);
+  }
+}
+.fb:hover{
+  background-color: #3B5998 !important;
+  border-radius: 0.2rem;
+  transition: all .3s ease;
+}
+
+.fb:hover .fb-div{
+   margin-top: -42.5px;
+   z-index: -2;
+   transition: all .3s ease;
+}
+
+.fb:hover .fb-div:nth-child(2){
+  top: 62px;
+  transition: all .3s ease;
+}
+
+.fb-div:nth-child(2){
+  position: absolute;
+  height: 30px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 46px;
+  transition: all .3s ease;
+}
+
+.fb-div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease;
+}
+
+.test2{
+  position: absolute;
+  display: block;
+  top: 49.5px;
+  height: 19.5px;
+  width: 32px;
+  background-color: white;
+  z-index: 3;
+}
+
+.test{
+  position: absolute;
+  display: block;
+  top: 0px;
+  height: 19.5px;
+  width: 32px;
+  background-color: white;
+  z-index: 2;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 32px;
+  height: 30px;
+}
+
+.socials {
+  display: flex;
+}
+
+.ig:hover{
+  background-color: #8A3AB9 !important;
+  border-radius: 0.2rem;
+  transition: all .3s ease;
+}
+
+.ig:hover .ig-div{
+   margin-top: -42.5px;
+   z-index: -2;
+   transition: all .3s ease;
+}
+
+.ig:hover .ig-div:nth-child(2){
+  top: 62px;
+  transition: all .3s ease;
+}
+
+.ig-div:nth-child(2){
+  position: absolute;
+  height: 30px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 46px;
+  transition: all .3s ease;
+}
+
+.ig-div{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease;
+}
+
+.igtest2{
+  position: absolute;
+  display: block;
+  top: 49.5px;
+  height: 19.5px;
+  width: 32px;
+  background-color: white;
+  z-index: 3;
+}
+
+.igtest{
+  position: absolute;
+  display: block;
+  top: 0px;
+  height: 19.5px;
+  width: 32px;
+  background-color: white;
+  z-index: 2;
+}
+
+.slides {
+  display: flex;
+  height: calc(100vh - 70px);
+  width: 100vw;
+}
+
+.left {
+ background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(cover.jpg) center center no-repeat; 
+  height: calc(100vh - 70px);
+  width: 50vw;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.naslov {
+  margin-bottom: 20px;
+  font-size: 30px; 
+}
+.opis {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+
+.opis ul {
+  list-style-type: none;
+  list-style-position: inside;
+  list-style-image: url('check-circle.svg');
+}
+
+.right{
+  height: calc(100vh - 80px);
+  width: 50vw;
+}
+
+.inner{
+  width: 87%;
+  margin: 0 auto;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.upit{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  line-height: 2em;
+  font-weight: bold;
+  font-family: "Varela Round", sans-serif;
+  color: #555;
+  font-size: 16px;
+}
+
+.ime-tel{
+  width: 100%;
+  display: flex;
+}
+
+.ime-wr, .tel-wr{
+  width: 50%;
+}
+
+#ime{
+  width: 95%;
+}
+
+.ime-wr input, .tel-wr input{
+  width: 80%;
+  height: 40px;
+}
+
+.upit input:not(input[type=checkbox]){
+  width: 100%;
+  margin-top: 5px;
+  height: 50px;
+  box-shadow: 0 10px 40px rgb(14 72 119 / 20%);
+  border: 1px solid #ced4da;
+  background-color:#f4f7f9;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  color: #495057;
+  border-radius: 0.18rem;
+}
+
+.upit input:not(input[type=checkbox]):focus{
+  box-shadow: 0 10px 40px rgb(14 72 119 / 0%);
+  background-color: white;
+  outline: #ced4da;
+  border-radius: 0.18rem;
+}
+
+.upit div{
+  margin-bottom: 10px;
+}
+
+.title-1{
+  font-size: 2rem;
+  width: 80%;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#kontakt{
+  height: 80px;
+}
+
+.call{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #bd942e !important;
+  padding: 12px 24px;
+  box-shadow: 0 10px 40px rgb(14 72 119 / 20%);
+  line-height: 2em;
+  border-radius: 0.28rem;
+}
+
+.privola-wr{
+  margin-top: 5px;
+}
+
+.privola-wr p{
+   font-size: 12px;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: black;
+}
+
+.posalji{
+  margin-top: 20px;
+  height: 45px;
+  width: 180px;
+  font-family: "Varela round", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #bd942e;
+  border: none;
+  border-radius: 0.1876rem;
+  cursor: pointer;
+}
+
+.posalji:hover{
+  box-shadow: inset 10px 10px 10px 5rem rgb(0, 0 , 0, 30%);
+  cursor: pointer;
+}
+
+.checkbox-wrap{
+  height: 28px;
+}
+
+.checkbox-wrap label:hover{
+cursor: pointer;
+}
+#checkbox:hover{
+  cursor: pointer;
+}
+
+.posjeti-web{
+  width: calc(100% - 180px);
+  text-align: right;
+  position: relative;
+  top: -30px;
+  left: 180px;
+}
+ 
+.posjeti-web a{
+  color: #bd942e;
+}
+
+small{
+  color: #dc3545 !important;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.hvala-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+ 
+}
+
+.hvala-inner{
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  margin-bottom: 100px;
+}
+
+
+.naslovna{
+  margin-top: 20px;
+  height: 45px;
+  width: 180px;
+  font-family: "Varela round", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #bd942e;
+  border: none;
+  border-radius: 0.1876rem;
+  cursor: pointer;
+}
+
+.naslovna:hover{
+  box-shadow: inset 10px 10px 10px 5rem rgb(0, 0 , 0, 30%);
+  cursor: pointer;
+}
+
+
